@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <ImageView
+        android:id="@+id/kibitz"
+        android:layout_width="126dp"
+        android:layout_height="44dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/kibitz_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="140dp"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/todo" />
+
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="539dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/kibitz"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingStart="25dp"
+            android:paddingLeft="25dp"
+            android:paddingEnd="25dp"
+            android:paddingRight="25dp">
+
+            <LinearLayout
+                android:id="@+id/rectangle1"
+                android:layout_width="275dp"
+                android:layout_height="120dp"
+                android:background="@drawable/card_gradient"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/user_1"
+                        android:layout_width="65dp"
+                        android:layout_height="63dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/user"
+                        android:contentDescription="@string/todo"
+                        android:elevation="4dp"
+                        tools:targetApi="lollipop" />
+
+                    <TextView
+                        android:id="@+id/username1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="top"
+                        android:text="@string/user_name"
+                        android:textAppearance="@style/who_am_i_ta"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/rokkitt_variablefont_wght" />
+
+                    <View
+                        android:id="@+id/heart1"
+                        android:layout_width="16dp"
+                        android:layout_height="14dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/heart" />
+
+                    <View
+                        android:id="@+id/reply1"
+                        android:layout_width="18dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/reply" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/wow_"
+                    android:layout_width="254dp"
+                    android:layout_height="37.04dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top"
+                    android:text="@string/wow"
+                    android:textAppearance="@style/chat_text" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <LinearLayout
+                android:id="@+id/rectangle2"
+                android:layout_width="275dp"
+                android:layout_height="120dp"
+                android:background="@drawable/card_gradient"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/user_2"
+                        android:layout_width="65dp"
+                        android:layout_height="63dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/user"
+                        android:contentDescription="@string/todo"
+                        android:elevation="4dp"
+                        tools:targetApi="lollipop" />
+
+                    <TextView
+                        android:id="@+id/username2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="top"
+                        android:text="@string/user_name"
+                        android:textAppearance="@style/who_am_i_ta"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/rokkitt_variablefont_wght" />
+
+                    <View
+                        android:id="@+id/heart2"
+                        android:layout_width="16dp"
+                        android:layout_height="14dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/heart" />
+
+                    <View
+                        android:id="@+id/reply2"
+                        android:layout_width="18dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/reply" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/thatsnice"
+                    android:layout_width="254dp"
+                    android:layout_height="37.04dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top"
+                    android:text="@string/that_s_great"
+                    android:textAppearance="@style/chat_text" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <LinearLayout
+                android:id="@+id/rectangle3"
+                android:layout_width="275dp"
+                android:layout_height="120dp"
+                android:background="@drawable/card_gradient"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/user_3"
+                        android:layout_width="65dp"
+                        android:layout_height="63dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/user"
+                        android:contentDescription="@string/todo"
+                        android:elevation="4dp"
+                        tools:targetApi="lollipop" />
+
+                    <TextView
+                        android:id="@+id/username3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="top"
+                        android:text="@string/user_name"
+                        android:textAppearance="@style/who_am_i_ta"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/rokkitt_variablefont_wght" />
+
+                    <View
+                        android:id="@+id/heart3"
+                        android:layout_width="16dp"
+                        android:layout_height="14dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/heart" />
+
+                    <View
+                        android:id="@+id/reply3"
+                        android:layout_width="18dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/reply" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/haha"
+                    android:layout_width="254dp"
+                    android:layout_height="37.04dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top"
+                    android:text="@string/haha"
+                    android:textAppearance="@style/chat_text" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <LinearLayout
+                android:id="@+id/rectangle4"
+                android:layout_width="275dp"
+                android:layout_height="120dp"
+                android:background="@drawable/card_gradient"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/user_4"
+                        android:layout_width="65dp"
+                        android:layout_height="63dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/user"
+                        android:contentDescription="@string/todo"
+                        android:elevation="4dp"
+                        tools:targetApi="lollipop" />
+
+                    <TextView
+                        android:id="@+id/username4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="top"
+                        android:text="@string/user_name"
+                        android:textAppearance="@style/who_am_i_ta"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/rokkitt_variablefont_wght" />
+
+                    <View
+                        android:id="@+id/heart4"
+                        android:layout_width="16dp"
+                        android:layout_height="14dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/heart" />
+
+                    <View
+                        android:id="@+id/reply4"
+                        android:layout_width="18dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/reply" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/yaay"
+                    android:layout_width="254dp"
+                    android:layout_height="37.04dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top"
+                    android:text="@string/yaay"
+                    android:textAppearance="@style/chat_text" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <LinearLayout
+                android:id="@+id/rectangle5"
+                android:layout_width="275dp"
+                android:layout_height="120dp"
+                android:background="@drawable/card_gradient"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/user_5"
+                        android:layout_width="65dp"
+                        android:layout_height="63dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/user"
+                        android:contentDescription="@string/todo"
+                        android:elevation="4dp"
+                        tools:targetApi="lollipop" />
+
+                    <TextView
+                        android:id="@+id/username5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="top"
+                        android:text="@string/user_name"
+                        android:textAppearance="@style/who_am_i_ta"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/rokkitt_variablefont_wght" />
+
+                    <View
+                        android:id="@+id/heart5"
+                        android:layout_width="16dp"
+                        android:layout_height="14dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/heart" />
+
+                    <View
+                        android:id="@+id/reply5"
+                        android:layout_width="18dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/reply" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/nice"
+                    android:layout_width="254dp"
+                    android:layout_height="37.04dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top"
+                    android:text="@string/nice"
+                    android:textAppearance="@style/chat_text" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

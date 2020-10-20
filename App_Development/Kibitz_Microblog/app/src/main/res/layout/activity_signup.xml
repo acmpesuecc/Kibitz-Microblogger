@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_up_btn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="106dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="216dp"
+        android:gravity="center"
+        android:text="@string/name"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/name_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/kibitzID"
+        android:layout_width="106dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:hint="@string/kibitz_1"
+        android:text="@string/kibitz_id"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_name" />
+
+    <ImageView
+        android:id="@+id/kibitz_logo"
+        android:layout_width="161dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kibitz_logo" />
+
+    <EditText
+        android:id="@+id/name_id"
+        android:layout_width="189dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginLeft="164dp"
+        android:layout_marginTop="216dp"
+        android:autofillHints=""
+        android:hint="@string/enter_your_name"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="128dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kibitz_logo"
+        app:srcCompat="@drawable/profile_pic" />
+
+    <EditText
+        android:id="@+id/kibitz_ID"
+        android:layout_width="189dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/enter_your_identity"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_id" />
+
+    <TextView
+        android:id="@+id/emailID"
+        android:layout_width="106dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/email_id"
+        android:textSize="20sp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kibitzID" />
+
+    <EditText
+        android:id="@+id/email_ID"
+        android:layout_width="189dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kibitz_ID"
+        android:autofillHints=""
+        android:hint="@string/enter_your_email_address"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/password1"
+        android:layout_width="106dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/password"
+        android:textSize="20sp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailID" />
+
+    <EditText
+        android:id="@+id/pwd_1"
+        android:layout_width="189dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginLeft="164dp"
+        android:layout_marginTop="24dp"
+        android:inputType="textPassword"
+        android:hint="@string/enter_a_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_ID"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/confirmpwd1"
+        android:layout_width="174dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/confirm_password"
+        android:textSize="20sp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password1" />
+
+    <EditText
+        android:id="@+id/confirmpwd_1"
+        android:layout_width="174dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginLeft="196dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/repeat_your_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwd_1"
+        android:importantForAutofill="no"
+        android:inputType="textPassword" />
+
+    <ImageButton
+        android:id="@+id/signup_btn"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="552dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/sign_up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Appsprint</string>
+    <string name="textview">TextView</string>
+    <string name="name">Name :</string>
+    <string name="todo">TODO</string>
+    <string name="kibitz_id">Kibitz_ID :</string>
+    <string name="kibitz_1">kibitz_1</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_your_identity">Enter your identity</string>
+    <string name="email_id">Email_ID :</string>
+    <string name="enter_your_email_address">Enter your email address</string>
+    <string name="password">Password :</string>
+    <string name="confirm_password">Confirm password :</string>
+    <string name="enter_a_password">Enter a password</string>
+    <string name="repeat_your_password">repeat your password</string>
+    <string name="button">Button</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="app_name1">Kibitz</string>
+    <string name="kibitz_id1">Kibitz_ID :</string>
+    <string name="password1">Password :</string>
+    <string name="id_placeholder">( enter your ID )</string>
+    <string name="password_placeholder">( enter your password )</string>
+    <!-- Homepage -->
+    <string name="user1">user1</string>
+    <string name="user5">user5</string>
+    <string name="user4">user4</string>
+    <string name="user3">user3</string>
+    <string name="user2">user2</string>
+    <string name="connect_with_people">Connect With People</string>
+    <string name="catch_up_with_the_world">CATCH UP WITH THE WORLD</string>
+    <string name="post">POST</string>
+    <string name="blog">BLOG</string>
+    <string name="user_name">User_Name</string>
+    <!-- public profile page-->
+    <string name="say_hi_">SAY HI!</string>
+    <string name="common_contacts">COMMON CONTACTS</string>
+    <string name="blogs">BLOGS</string>
+    <!-- Settings Page-->
+    <string name="user_name_">USER_NAME</string>
+    <string name="edit_profil">Edit Profile</string>
+    <string name="about_us">About Us</string>
+    <!--About us-->
+    <string name="about_us_2">ABOUT US</string>
+    <string name="have_some_c">Have some cool thoughts to share with the world? Wanna get a new perspective? Kibitz is what you\'re looking at!\nKibitz lets you share your thoughts and feelings over the internet and chat with your friends.</string>
+    <string name="terms_condi">TERMS &amp; \nCONDITIONS</string>
+    <string name="user_shall_">1. User shall not post any comment that is offending or dicriminating towards any individual/ groups of individuals/organisation.\n2. This application must NOT contain content that violates copyright.\nHappy Kibitzing!!!</string>
+    <!-- Profile Page-->
+    <string name="profile_pic">profile pic</string>
+    <string name="name_">Name :</string>
+    <string name="kibitz_id_">Kibitz_ID :</string>
+    <string name="email_id_">Email_ID :</string>
+    <string name="bio_">Bio:</string>
+    <string name="tell_us_something_about_yourself"><![CDATA[<tell us something about yourself>]]></string>
+    <string name="enter_email_id"><![CDATA[<enter email id>]]></string>
+    <string name="kibitzid"><![CDATA[<KibitzID>]]></string>
+    <!--chat_forum-->
+    <string name="who_am_i_ta">( who am I talking to )</string>
+    <string name="shrey1010_">shrey1010: </string>
+    <string name="rk_1406_2k_">rk_1406_2k: </string>
+    <string name="wanna_shoot">wanna shoot shoot</string>
+    <string name="dont_talk">don\'t talk</string>
+    <string name="smile">:)</string>
+    <string name="enter_text">Enter text here</string>
+    <string name="entert_the_text">Enter the text</string>
+    <string name="what_do_you_feel_like">What do you feel like...</string>
+    <!-- Comments Page-->
+    <string name="wow">wow</string>
+    <string name="nice">Nice!</string>
+    <string name="yaay">Yaay!</string>
+    <string name="haha">Haha!</string>
+    <string name="that_s_great">That\'s great</string>
+    <string name="add">ADD</string>
+    <string name="type_here"><![CDATA[<Type Here>]]></string>
+    <string name="comment">Comment:</string>
+    <string name="find_people">Find People</string>
+    <!--share page-->
+    <string name="select_cont">SELECT CONTACTS</string>
+    <string name="text1">user_name1</string>
+    <string name="text2">user_name2</string>
+    <string name="text3">user_name3</string>
+    <string name="text4">user_name4</string>
+    <string name="text5">user_name5</string>
+    <string name="text6">user_name6</string>
+    <string name="text7">user_name7</string>
+    <string name="text8">user_name8</string>
+    <string name="text9">user_name9</string>
+    <string name="kibitz_name"><![CDATA[<KIBITZ_NAME>]]></string>
+</resources>

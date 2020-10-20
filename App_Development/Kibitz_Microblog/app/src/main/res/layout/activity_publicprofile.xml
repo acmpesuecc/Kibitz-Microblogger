@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/public_prof"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/kibitz_logo3"
+        android:layout_width="190dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kibitz_logo" />
+
+    <TextView
+        android:id="@+id/say_hi_"
+        android:layout_width="178dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:gravity="center"
+        android:text="@string/say_hi_"
+        android:textAppearance="@style/say_hi_"
+        android:textSize="27sp"
+        app:fontFamily="@font/rubik_mono_one_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kibitz_logo3" />
+
+    <TextView
+        android:id="@+id/common_cont"
+        android:layout_width="365dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:gravity="center"
+        android:text="@string/common_contacts"
+        android:textAppearance="@style/say_hi_"
+        android:textSize="23sp"
+        app:fontFamily="@font/rubik_mono_one_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kibitz_ID_txt" />
+
+    <TextView
+        android:id="@+id/blogs_txt"
+        android:layout_width="365dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="340dp"
+        android:gravity="center"
+        android:text="@string/blogs"
+        android:textAppearance="@style/say_hi_"
+        android:textSize="23sp"
+        app:fontFamily="@font/rubik_mono_one_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kibitz_logo3" />
+
+    <TextView
+        android:id="@+id/kibitz_ID_txt"
+        android:layout_width="255dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginLeft="78dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginRight="78dp"
+        android:gravity="center"
+        android:text="@string/kibitz_name"
+        android:textAppearance="@style/say_hi_"
+        android:textSize="22sp"
+        app:fontFamily="@font/rubik_mono_one_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageButton
+        android:id="@+id/share_btn"
+        android:layout_width="88dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/connect_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="137dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/say_hi_"
+        app:srcCompat="@drawable/user" />
+
+    <View
+        android:id="@+id/vec_1"
+        android:layout_width="410dp"
+        android:layout_height="2dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="244dp"
+        android:background="@drawable/vector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView_1"
+        android:layout_width="413dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="284dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/user_1"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/user1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/user1"
+                android:textSize="25sp"
+                app:fontFamily="@font/robotomono_italic_variablefont_wght" />
+
+            <ImageView
+                android:id="@+id/user_2"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/user2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/user2"
+                android:textSize="25sp"
+                app:fontFamily="@font/robotomono_italic_variablefont_wght" />
+
+            <ImageView
+                android:id="@+id/user_3"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/user3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/user3"
+                android:textSize="25sp"
+                app:fontFamily="@font/robotomono_italic_variablefont_wght" />
+
+            <ImageView
+                android:id="@+id/user_4"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/user4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/user4"
+                android:textSize="25sp"
+                app:fontFamily="@font/robotomono_italic_variablefont_wght" />
+
+            <ImageView
+                android:id="@+id/user_5"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/user5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/user5"
+                android:textSize="25sp"
+                app:fontFamily="@font/robotomono_italic_variablefont_wght" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:id="@+id/vec_2"
+        android:layout_width="410dp"
+        android:layout_height="2dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="392dp"
+        android:background="@drawable/vector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="410dp"
+        android:layout_height="223dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blogs_txt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@android:color/holo_green_dark"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="321dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="134dp"
+                        android:layout_height="61dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="76dp"
+                        android:contentDescription="@string/todo"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/image_blog" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="60dp"
+                        android:layout_height="63dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:contentDescription="@string/todo"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/user" />
+
+                    <TextView
+                        android:id="@+id/user_name_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/user_name"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toEndOf="@+id/imageView6"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="268dp"
+                        android:layout_marginLeft="268dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/roundcorner"
+                        android:contentDescription="@string/todo"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/likes" />
+
+                    <ImageButton
+                        android:id="@+id/share_to1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="4dp"
+
+                        android:background="@drawable/roundcorner"
+                        android:contentDescription="@string/todo"
+                        app:layout_constraintStart_toEndOf="@+id/imageButton8"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/share_btn" />
+
+                    <ImageButton
+                        android:id="@+id/com_id1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/roundcorner"
+                        android:contentDescription="@string/todo"
+                        app:layout_constraintStart_toEndOf="@+id/share_to1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/add_comment" />
+
+                    <ImageButton
+                        android:id="@+id/view_comments1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/roundcorner"
+                        android:contentDescription="@string/todo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/viewing_comments" />
+
+                    <TextView
+                        android:id="@+id/textView_2"
+                        android:layout_width="145dp"
+                        android:layout_height="99dp"
+                        android:layout_marginTop="48dp"
+                        android:layout_marginEnd="68dp"
+                        android:layout_marginRight="68dp"
+                        android:background="@drawable/rectangle"
+                        android:gravity="center"
+                        android:text="@string/blog"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/blank2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@android:color/holo_green_dark"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="321dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView_3"
+                        android:layout_width="134dp"
+                        android:layout_height="61dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="76dp"
+                        android:contentDescription="@string/todo"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/image_blog" />
+
+                    <ImageView
+                        android:id="@+id/imageView_4"
+                        android:layout_width="60dp"
+                        android:layout_height="63dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:contentDescription="@string/todo"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/user" />
+
+                    <TextView
+                        android:id="@+id/user_name_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/user_name"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toEndOf="@+id/imageView_4"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="268dp"
+                        android:layout_marginLeft="268dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/roundcorner"
+                        android:contentDescription="@string/todo"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/likes" />
+
+                    <ImageButton
+                        android:id="@+id/share_to2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="4dp"
+
+                        android:background="@drawable/roundcorner"
+                        android:contentDescription="@string/todo"
+                        app:layout_constraintStart_toEndOf="@+id/imageButton_6"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/share_btn" />
+
+                    <ImageButton
+                        android:id="@+id/com_id2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/roundcorner"
+                        android:contentDescription="@string/todo"
+                        app:layout_constraintStart_toEndOf="@+id/share_to2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/add_comment" />
+
+                    <ImageButton
+                        android:id="@+id/view_comments2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/roundcorner"
+                        android:contentDescription="@string/todo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/viewing_comments" />
+
+                    <TextView
+                        android:id="@+id/textView_3"
+                        android:layout_width="145dp"
+                        android:layout_height="99dp"
+                        android:layout_marginTop="48dp"
+                        android:layout_marginEnd="68dp"
+                        android:layout_marginRight="68dp"
+                        android:background="@drawable/rectangle"
+                        android:gravity="center"
+                        android:text="@string/blog"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/blank1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@android:color/holo_green_dark"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="321dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="134dp"
+                        android:layout_height="61dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="76dp"
+                        android:contentDescription="@string/todo"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/image_blog" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="60dp"
+                        android:layout_height="63dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:contentDescription="@string/todo"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/user" />
+
+                    <TextView
+                        android:id="@+id/user_name_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/user_name"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toEndOf="@+id/imageView4"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="268dp"
+                        android:layout_marginLeft="268dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/roundcorner"
+                        android:contentDescription="@string/todo"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/likes" />
+
+                    <ImageButton
+                        android:id="@+id/share_to3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="4dp"
+
+                        android:background="@drawable/roundcorner"
+                        android:contentDescription="@string/todo"
+                        app:layout_constraintStart_toEndOf="@+id/imageButton6"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/share_btn" />
+
+                    <ImageButton
+                        android:id="@+id/com_id3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/roundcorner"
+                        android:contentDescription="@string/todo"
+                        app:layout_constraintStart_toEndOf="@+id/share_to3"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/add_comment" />
+
+                    <ImageButton
+                        android:id="@+id/view_comments3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/roundcorner"
+                        android:contentDescription="@string/todo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/viewing_comments" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="145dp"
+                        android:layout_height="99dp"
+                        android:layout_marginTop="48dp"
+                        android:layout_marginEnd="68dp"
+                        android:layout_marginRight="68dp"
+                        android:background="@drawable/rectangle"
+                        android:gravity="center"
+                        android:text="@string/blog"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
